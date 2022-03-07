@@ -24,8 +24,6 @@
         </div>
     </nav>
 
-    <div class="content">
-        @yield('main-content')
-    </div>
+    @yield('main-content')
 </body>
 </html>
