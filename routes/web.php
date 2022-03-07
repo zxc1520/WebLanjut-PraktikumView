@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $data = array(
-        "title" => "Personal Webpage",
+        "title" => "home",
         "name" => "Afif Qomarul Ghulam",
         "address" => "Griya Nagari Singosari",
     );
@@ -15,6 +15,7 @@ Route::get('/', function () {
 
 Route::get('/about', function () {
     $data = array (
+        "title" => "about",
         "nama"  => "Afif Qomarul Ghulam",
         "ttl"   => "Malang 7 Mei 2002",
         "alamat" => "Jl. LA Sucipto VIII/7 Blimbing, Malang",
