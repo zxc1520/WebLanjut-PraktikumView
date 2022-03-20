@@ -113,7 +113,7 @@
                 </tr>
             </tbody>
         </table>
-        <form>
+        <form class="comment-form">
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email address</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -127,6 +127,8 @@
                 <label class="form-check-label" for="exampleCheck1">Check me out</label>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" id="btnclear" class="btn btn-danger" onclick="clear()">Clear</button>
+
         </form>
     </section>
 </main>
