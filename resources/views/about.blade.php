@@ -91,26 +91,28 @@
         </div>
         <table class="table table-stripped">
             <tbody>
+                @foreach ($body as $b)
                 <tr>
                     <td>Name</td>
-                    <td>{{ $nama }}</td>
+                    <td>{{ $b['nama'] }}</td>
                 </tr>
                 <tr>
                     <td>DoB</td>
-                    <td>{{ $ttl }}</td>
+                    <td>{{ $b['ttl'] }}</td>
                 </tr>
                 <tr>
                     <td>Address</td>
-                    <td>{{ $alamat }}</td>
+                    <td>{{ $b['alamat'] }}</td>
                 </tr>
                 <tr>
                     <td>Domicile</td>
-                    <td>{{ $domisili }}</td>
+                    <td>{{ $b['domisili'] }}</td>
                 </tr>
                 <tr>
                     <td>Phone</td>
-                    <td>{{ $telp }}</td>
+                    <td>{{ $b['telp'] }}</td>
                 </tr>
+                @endforeach
             </tbody>
         </table>
         <form class="comment-form">
