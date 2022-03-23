@@ -91,29 +91,31 @@
         </div>
         <table class="table table-stripped">
             <tbody>
+                @foreach ($body as $b)
                 <tr>
                     <td>Name</td>
-                    <td>{{ $nama }}</td>
+                    <td>{{ $b['nama'] }}</td>
                 </tr>
                 <tr>
                     <td>DoB</td>
-                    <td>{{ $ttl }}</td>
+                    <td>{{ $b['ttl'] }}</td>
                 </tr>
                 <tr>
                     <td>Address</td>
-                    <td>{{ $alamat }}</td>
+                    <td>{{ $b['alamat'] }}</td>
                 </tr>
                 <tr>
                     <td>Domicile</td>
-                    <td>{{ $domisili }}</td>
+                    <td>{{ $b['domisili'] }}</td>
                 </tr>
                 <tr>
                     <td>Phone</td>
-                    <td>{{ $telp }}</td>
+                    <td>{{ $b['telp'] }}</td>
                 </tr>
+                @endforeach
             </tbody>
         </table>
-        <form>
+        <form class="comment-form">
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email address</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -127,6 +129,8 @@
                 <label class="form-check-label" for="exampleCheck1">Check me out</label>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" id="btnclear" class="btn btn-danger" onclick="clear()">Clear</button>
+
         </form>
     </section>
 </main>
