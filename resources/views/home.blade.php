@@ -8,7 +8,7 @@
                 Hello Everyone ! <br />
                 I'm {{ $name }}, I'm an <span>informatics</span> student.
             </h2>
-            <p>Hey and welocome to my personal website page. you can explore my website page just one click below. Rightnow, i'm living in {{ $address }}</p>
+            <p>Hey and welocome to my personal website page. you can explore my website page just one click below. Rightnow, i'm living in {{ $address }}, and here is my number {{ $telp }}</p>
         </div>
         <div class="intro-btn-layout">
             <a href="{{ url('about') }}" class="btn-prime">Futher Information</a>
